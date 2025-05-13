@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Story Writer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Story Writer</h1>
+  <img src="picture/your.jpeg" alt="logo1" id="image1" style="clip-path: circle(80%); height: 200px">
+   
+  <button class="dark-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+</header>
+
+<nav>
+  <a href="#" onclick="showPage('home')">Home</a>
+  <a href="#" onclick="showPage('write')">Write</a>
+  <a href="#" onclick="showPage('folders')">Folders</a>
+  <a href="#" onclick="showPage('favourites')">Favourites</a>
+  <a href="#" onclick="showPage('about')">About</a>
+</nav>
+
+<div class="notification" id="notification"></div>
+
+<section id="home" class="page">
+  <h1>Welcome</h1>
+  <br>
+
+  <h2>Start writing your story now! </h2>
+  <img src="picture/story.jpeg" alt="image">
+  <br>
+  <br>
+  <h2>Create, edit, download, and favourite your stories!</h2>
+</section>
+
+<section id="write" class="page hidden">
+  <h2>Write Your Story</h2>
+  <p>Start writing your masterpiece below. Let your creativity flow!</p>
+
+  <div class="word-count">
+    <p>Word Count: <span id="word-count">0</span></p>
+  </div>
+
+  <input type="text" id="story-title" placeholder="Enter story title" />
+  <textarea id="story-input" rows="12" placeholder="Once upon a time..."></textarea>
+  <input type="text" id="folder-name" placeholder="Folder name (optional)">
+  <button id="save-btn">
+    <i class="fas fa-save"></i> Save Story
+  </button>
+</section>
+
+<section id="folders" class="page hidden">
+  <h2>Your Folders</h2>
+  <div id="folders-list"></div>
+  <img src="picture/my.jpeg" alt="my">
+</section>
+
+<section id="favourites" class="page hidden">
+  <h2>Favourites</h2>
+  <div id="favourites-list"></div>
+  <img src="picture/fav.jpg" alt="favourite" id="fav">
+</section>
+
+<section id="about" class="page hidden">
+  <h2>About Story Writer</h2>
+  <h2>This web app allows you to write, edit, save, organize, and download your stories. You can also add stories to your favorites and organize them into folders for better management. Enjoy your creative journey!</h2>
+  <br>
+  <img src="picture/story image 2.avif" alt="">
+  <h2>Welcome to Inkspire – where stories come to life.
+
+At Inkspire, we believe everyone has a story worth telling. Our platform is dedicated to writers of all backgrounds – whether you're a seasoned novelist, an aspiring poet, or someone who just loves to write. We provide a creative space to express your imagination, connect with fellow storytellers, and share your work with the world.
+
+What We Offer:
+
+✍️ Create and Publish: Write your stories, poems, or series directly on our platform and publish them instantly.
+
+📚 Read and Discover: Explore a diverse collection of stories across genres, from romance to fantasy, horror to historical fiction.
+
+💬 Community Feedback: Engage with a supportive community through comments, likes, and constructive critiques.
+
+🧠 Writing Tools: Access tools designed to help you plan, edit, and perfect your stories.
+
+Whether you're here to write, read, or both – Inkspire is your home for creativity and storytelling.
+
+Start your next chapter with us.</h2>
+</section>
+
+<footer>
+  <p>&copy; 2025 Story Writer</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
