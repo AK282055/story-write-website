@@ -1,0 +1,202 @@
+:root {
+      --bg-main: #fdf6f0;
+      --bg-section: #fff;
+      --text-color: #333;
+      --header-footer-bg: #4a148c;
+      --header-footer-color: white;
+      --nav-bg: #8e24aa;
+      --nav-hover: #6a1b9a;
+      --input-bg: #fff;
+      --story-bg: #f3e5f5;
+      --button-bg: #8e24aa;
+      --button-hover-bg: #6a1b9a;
+      --button-active-bg: #ab47bc;
+    }
+
+    body.dark-mode {
+      --bg-main: #2a2730;
+      --bg-section: #3b3740;
+      --text-color: white;
+      --header-footer-bg: #4527a0;
+      --header-footer-color: white;
+      --nav-bg: #5e35b1;
+      --nav-hover: #4527a0;
+      --input-bg: #100d14;
+      --story-bg: #a1ca6c;
+      --button-bg: #7e57c2;
+      --button-hover-bg: #5e35b1;
+      --button-active-bg: #9575cd;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      background-color: var(--bg-main);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header, footer {
+      background-color: var(--header-footer-bg);
+      color: var(--header-footer-color);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+     #image1{
+  
+  left: 0;
+  
+    
+      }
+
+    nav {
+      background-color: var(--nav-bg);
+      text-align: center;
+      padding: 10px;
+      height: 50px;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: var(--nav-hover);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: var(--bg-section);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      box-sizing: border-box;
+      transition: box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+#fav{
+  height: 300px;
+  width: 400px;
+}
+    h2 {
+      color: var(--button-bg);
+      font-family: 'Georgia', serif;
+      margin-top: 0;
+    }
+
+    #write {
+      background: linear-gradient(135deg, var(--bg-main), #ede7f6);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 900px;
+      margin: 30px auto;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #write:hover {
+      transform: scale(1.02);
+    }
+
+    input[type="text"], #story-input {
+      width: 100%;
+      padding: 18px;
+      margin: 15px 0;
+      border-radius: 12px;
+      border: 2px solid var(--button-bg);
+      font-size: 1.1em;
+      background-color: var(--input-bg);
+      color: var(--text-color);
+      font-family: 'Merriweather', serif;
+      line-height: 1.6;
+      box-sizing: border-box;
+    }
+
+    #story-input:focus, input[type="text"]:focus {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-color: var(--button-active-bg);
+    }
+
+    #story-title, #folder-name, #story-input {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background: var(--button-bg);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition:  0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: var(--button-hover-bg);
+      transform: translateY(-2px);
+    }
+
+    button:active {
+      background: var(--button-active-bg);
+      transform: translateY(2px);
+    }
+
+    .word-count {
+      text-align: right;
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .saved-story {
+      background-color: var(--story-bg);
+      padding: 10px;
+      margin: 10px 0;
+      border-left: 5px solid var(--button-bg);
+      border-radius: 6px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .notification {
+      background-color: #c8e6c9;
+      color: #256029;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 6px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      display: none;
+      font-size: 1.5em;
+      width: auto;
+    }
+
+    .dark-toggle {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.4em;
+      cursor: pointer;
+    }
+  
