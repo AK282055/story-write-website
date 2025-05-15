@@ -199,4 +199,88 @@
       font-size: 1.4em;
       cursor: pointer;
     }
-  
+  /* Mobile Devices (up to 600px) */
+@media screen and (max-width: 600px) {
+  header img {
+    height: 100px;
+  }
+
+  nav {
+    font-size: 1.2rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  input[type="text"], #story-input {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #fav {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets (600px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  nav {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  input[type="text"], #story-input {
+    font-size: 1.1em;
+  }
+
+  button {
+    font-size: 1.1em;
+  }
+
+  #fav {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Desktops (more than 1024px) */
+@media screen and (min-width: 1025px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav a {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  #fav {
+    width: 400px;
+    height: 300px;
+  }
+}
